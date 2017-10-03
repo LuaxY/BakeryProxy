@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>key/ca.pem</file>
+        <file>key/certificate.pem</file>
+        <file>key/key.pem</file>
+        <file>key/passphrase.txt</file>
+    </qresource>
+</RCC>
