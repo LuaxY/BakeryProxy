@@ -43,7 +43,7 @@ private:
     void write(const T& data);
 
     template<class T>
-    void write(const std::vector<T>& data, bool writeSize);
+    void write(const std::vector<T>& data, bool writeSize = true);
 
     const int INT_SIZE = 32;
     const int SHORT_SIZE = 16;

@@ -243,7 +243,7 @@ void BinaryWriter::write(const std::vector<T> &data, bool writeSize)
 
     if (writeSize)
     {
-        throw std::logic_error("Not implemented");
+        writeUShort(static_cast<ushort>(size));
     }
 
     if (bytes == nullptr || size == 0)

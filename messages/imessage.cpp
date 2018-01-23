@@ -20,3 +20,8 @@ ByteArray IMessage::getData() const
 {
     return data;
 }
+
+void IMessage::setData(ByteArray _data)
+{
+    data = _data;
+}

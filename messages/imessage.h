@@ -15,6 +15,7 @@ public:
     uint getUnknownData() const;
     ushort getId() const;
     ByteArray getData() const;
+    void setData(ByteArray _data);
 
 protected:
     uint unknownData;

@@ -35,16 +35,7 @@ void Packet::serialize(IMessage* message, ByteArray& buffer)
         break;
     }
 
-    if (message->getName() == "BakeryIdentificationSuccessMessage") {
-        std::vector<ubyte> hack = {
-            0x00,0x0B,
-            'A','D','M','I','N',0x00,0x00,0x00,0x00,0x00,0x00,
-            0x02,0x42,0x76,0xED,0x4C,0xD9,0xF1,0x80,0x00,0x00,0x00,0x00,0x77,0x00
-        };
-        writer.writeUBytes(hack, false);
-    } else {
-        writer.writeBytes(message->getData(), false);
-    }
+    writer.writeBytes(message->getData(), false);
 }
 
 bool Packet::deserialize(ByteArray& buffer)
